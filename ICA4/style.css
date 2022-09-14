@@ -1,7 +1,8 @@
 /* General styles - put these straight into your stylesheet */
 
-body {
+  body {
     margin: 0;
+    font-size: 10px;
   }
   
   html {
@@ -11,24 +12,36 @@ body {
   }
 
   p h2 {
-    margin: 0px;
+    margin: 0em;
   }
 
   h2 {
-    font-size: 20px;
-    line-height: 15px;
+    font-size: 2em;
+    line-height: .5em;
   }
 
+
+/* header and footer */
   .card footer p {
-    font-size: 15px;
-    line-height: 0px;
+    font-size: 1.5em;
+    margin: auto;
+  }
+
+  .card header {
+    height: 3em;
+    padding: 1em;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+    border-radius: 1.5em 1.5em 0 0;
   }
   
-  .card article p {
-    padding: 10px;
-    color: white;
+  .card footer {
+    height: 3em;
+    padding: 1em;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+    border-radius: 0 0 1.5em 1.5em;
   }
 
+  /* card container */
   .card {
     width: 35em;
     height: 22em;
@@ -37,20 +50,12 @@ body {
     border: 0.2em solid black;
     border-radius: 1.5em;
   }
-  
-  .card header {
-    height: 30px;
-    padding: 10px;
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
-    border-radius: 1.5em 1.5em 0 0;
-  }
-  
-  .card footer {
-    height: 30px;
-    padding: 10px;
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
-    border-radius: 0 0 1.5em 1.5em;
-  }
+
+/* card contents */
+  .card article p {
+    padding: 1em;
+    color: white;
+  }  
   
   .card article {
     height: 120px;
