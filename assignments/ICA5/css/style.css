@@ -17,11 +17,12 @@ article {
   height: 297mm;
   margin: 20px auto;
   position: relative;
-  background-image: url("../img/top-image.png"), url("../img/bottom-image.png"), linear-gradient(rgba(170,170,170,0.8), rgba(225,225,225,0.8),rgba(170,170,170,0.8));
-  background-attachment:fixed;
+  background-image: url("../img/top-image.png"), url("../img/bottom-image.png"), linear-gradient(rgba(170,170,170,0.7), 1%, rgb(255, 255, 255),rgba(170,170,170,0.7) 150%);
   background-position: top center, bottom center;
   background-repeat: no-repeat;
   background-color: white;
+  border-top: 1mm solid red;
+  border-bottom: 1mm solid red;
 }
 
 address {
