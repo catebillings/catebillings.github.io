@@ -1,0 +1,45 @@
+/* Navigation Bar */
+.topnav {
+    background-color: #BDDBC9;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #1E2420;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic ATF Thin';
+    font-size: 16pt;
+}
+
+.topnav a:hover {
+    color: #768C7F;
+}
+
+.topnav a.active {
+    color: #BDDBC9;
+}
+
+
+
+h1 {
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 45pt;
+}
+
+h2 {
+    font-family: 'Franklin Gothic';
+    font-size: 34pt;
+}
+
+p {
+    font-family: 'Franklin Gothic Book';
+    font-size: 14pt;
+}
+
+hr {
+    border: 8px solid #BDDBC9;
+}
+
