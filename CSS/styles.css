@@ -34,6 +34,16 @@ h2 {
     font-size: 34pt;
 }
 
+h3 {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 26pt;
+}
+
+h4 {
+    font-family: 'Franklin Gothick Book Cond';
+    font-size: 22pt;
+}
+
 p {
     font-family: 'Franklin Gothic Book';
     font-size: 14pt;
