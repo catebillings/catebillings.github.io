@@ -8,12 +8,13 @@ body {
   img {
       max-width: 100%;
       display: block;
+      float: left;
   }
 
-  article img {
+  /* article img {
     float: left;
     padding: 15px;
-  }
+  } */
   
   .logo {
     font-size: 200%;
