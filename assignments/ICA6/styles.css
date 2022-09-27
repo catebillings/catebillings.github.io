@@ -9,12 +9,8 @@ body {
       max-width: 100%;
       display: block;
       float: left;
+      width: 20px;
   }
-
-  /* article img {
-    float: left;
-    padding: 15px;
-  } */
   
   .logo {
     font-size: 200%;
