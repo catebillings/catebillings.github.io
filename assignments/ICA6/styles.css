@@ -9,6 +9,11 @@ body {
       max-width: 100%;
       display: block;
   }
+
+  article img {
+    float: left;
+    padding: 20px;
+  }
   
   .logo {
     font-size: 200%;
@@ -50,7 +55,7 @@ body {
   .photos {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1px;
