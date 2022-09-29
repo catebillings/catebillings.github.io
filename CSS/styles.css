@@ -1,3 +1,39 @@
+/* Responsive Design */
+
+/* Phone */
+@media (max-width: 400px) {
+    .topnav {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .main {
+        display: grid;
+        grid-template-rows: 3fr 1fr 1fr;
+        row-gap: 0;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+  }
+
+/*Computer Screen */
+@media (min-width: 401px) {
+    .topnav {
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+  }
+
+
 /* Navigation Bar */
 .topnav {
     background-color: #BDDBC9;
@@ -23,7 +59,7 @@
 }
 
 
-
+/* Text */
 h1 {
     font-family: 'Franklin Gothic Heavy';
     font-size: 45pt;
@@ -49,6 +85,8 @@ p {
     font-size: 14pt;
 }
 
+
+/* Design Elements */
 hr {
     border: 8px solid #BDDBC9;
 }
