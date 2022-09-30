@@ -1,7 +1,7 @@
 /* Responsive Design */
 
 /* Phone */
-@media (max-width: 400px) {
+@media screen and (min-width:0px) {
     .topnav {
         background-color: #BDDBC9;
         overflow: hidden;
@@ -19,7 +19,7 @@
   }
 
 /*Computer Screen */
-@media (min-width: 401px) {
+@media screen and (min-width:1080px) {
     .topnav {
         background-color: #BDDBC9;
         overflow: hidden;
