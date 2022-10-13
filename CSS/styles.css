@@ -135,5 +135,44 @@ hr {
     font-size: 26pt;
 }
 
+.name {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 26pt;
+    text-align: center;
+}
+
+.usuk {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 26pt;
+    text-align: center; 
+}
+
+.story {
+    font-family: 'Franklin Gothic Book';
+    font-size: 14pt;
+    text-align: center;
+}
+
+button {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 26pt;
+    background-color: #768C7F;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #DEF2E7;
+    text-align: center; 
+}
+
+.button {
+    text-align: center;
+}
+
 
 
