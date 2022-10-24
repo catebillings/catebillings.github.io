@@ -163,6 +163,10 @@ button {
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
+    position: absolute;
+    cursor: pointer;
+    top: 2px;
+    left: 2px;
 }
 
 button:hover {
@@ -174,5 +178,40 @@ button:hover {
     text-align: center;
 }
 
+/* Assignment 9 */
+.full-img {
+    position: relative;
+    display: block;
+    width: 640px;
+    height: 480px;
+    
+  }
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 480px;
+    background-color: rgba(0,0,0,0);
+}
 
+.thumb-bar img {
+    display: block;
+    width: 128px;
+    height: 96px;
+    float: left;
+    cursor: pointer;
+}
+
+.aninebody {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.anineh1 {
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 45pt;
+    text-align: center;
+}
 
