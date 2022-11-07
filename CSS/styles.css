@@ -92,6 +92,11 @@
 
 
 /* Text */
+header {
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 45pt;
+}
+
 h1 {
     font-family: 'Franklin Gothic Heavy';
     font-size: 45pt;
