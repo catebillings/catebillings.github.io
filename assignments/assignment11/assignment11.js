@@ -2,7 +2,7 @@ const quoteButton = document.querySelector('.new-quote');
 
 quoteButton.addEventListener('click', getQuote);
 
-const endpoint = 'https://api.whatdoestrumpthink.com/api/v1/quotes/random';
+const endpoint = 'https://api.api-ninjas.com/v1/randomword';
 
 
 async function getQuote(){
@@ -11,9 +11,7 @@ async function getQuote(){
 
     let json_response = JSON.parse (response);
 
-    console.log(json_response['message']);
-
-    displayQuote(json_response['message']);
+    displayQuote(json_response['word']);
 }
 
 
