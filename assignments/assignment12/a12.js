@@ -15,7 +15,7 @@ function minus() {
     if (outputInt > 0) {
     outputInt -=1;
     output.textContent = outputInt; }
- }
+}
 
 function plus() {
     if (outputInt < 9999999999) {
@@ -28,13 +28,16 @@ function random() {
     output.textContent = outputInt;
 }
 
-
 function randomNumber(min, max) {
     const num = Math.floor(Math.random() * (max - min + 1)) + min;
     return num;
 }
 
-
+function moveElmRand(elm){
+    elm.style.position ='absolute';
+    elm.style.top = Math.floor(Math.random()*90+5)+'%';
+    elm.style.left = Math.floor(Math.random()*90+5)+'%';
+}
 
 const output = document.querySelector('.output');
 let outputInt = parseInt(output.textContent);
@@ -46,33 +49,11 @@ const resetButton = document.querySelector('.reset-button').addEventListener('cl
 const randomButton = document.querySelector('.random-button').addEventListener('click',random);
 const submitButton = document.querySelector('.submit-button').addEventListener('click',submit);
 
-
-//sets a random absolute position to a html element; receives the html element
-function moveElmRand(elm){
-    elm.style.position ='absolute';
-    elm.style.top = Math.floor(Math.random()*90+5)+'%';
-    elm.style.left = Math.floor(Math.random()*90+5)+'%';
-}
+  
+document.querySelector('#minus').addEventListener('click', function(e){ moveElmRand(e.target);});
+document.querySelector('#plus').addEventListener('click', function(e){ moveElmRand(e.target);});
+document.querySelector('#reset').addEventListener('click', function(e){ moveElmRand(e.target);});
+document.querySelector('#random').addEventListener('click', function(e){ moveElmRand(e.target);});
+document.querySelector('#submit').addEventListener('click', function(e){ moveElmRand(e.target);});
    
-//get the #btn_test
-var minus = document.querySelector('#minus')
-var plus = document.querySelector('#plus')
-var reset = document.querySelector('#reset')
-var random = document.querySelector('#random')
-var submit = document.querySelector('#submit')
-   
-   
-minus.addEventListener('mouseenter', function(e){ moveElmRand(e.target);});
-minus.addEventListener('click', function(e){ alert('You are Good.');});
 
-plus.addEventListener('mouseenter', function(e){ moveElmRand(e.target);});
-plus.addEventListener('click', function(e){ alert('You are Good.');});
-
-reset.addEventListener('mouseenter', function(e){ moveElmRand(e.target);});
-reset.addEventListener('click', function(e){ alert('You are Good.');});
-
-random.addEventListener('mouseenter', function(e){ moveElmRand(e.target);});
-random.addEventListener('click', function(e){ alert('You are Good.');});
-
-submit.addEventListener('mouseenter', function(e){ moveElmRand(e.target);});
-submit.addEventListener('click', function(e){ alert('You are Good.');});
