@@ -16,12 +16,13 @@
           </div>
         <h1>Recipe Game</h1>
         <hr>
-
-        <div id="myDIV" class="header">
+        <h3>Below is an interactive tool to learn my favorite fettucine alfredo recipe.
+          You can cross ingredients you already have off of the list.
+          Then, challenge yourself by putting the steps to the recipe in order. Have fun! </h3>
+        <hr>
+          <div id="myDIV" class="header">
             <h2>Ingredients</h2>
-            <input type="text" id="myInput" placeholder="Title...">
-            <span onclick="newElement()" class="addBtn">Add</span>
-          </div>
+        </div>
           
           <ul class = "myUL">
             <li>4 Tbsp. butter</li>
@@ -37,6 +38,30 @@
             <li>cup shaved parmesan</li>
             <li>Tbsp. lemon juice</li>
           </ul>
+
+          <div id="myDIV" class="header">
+            <h2>Fettuccine Alfredo Recipe Steps</h2>
+ 
+
+          </div>
+          
+          <ul class="myUL" id="myUL"></ul>
+
+          
+          <button class="answerbtn" onclick="solutionFunction(this)">Click Me for Solution</button>
+          <div class="reveal" style="display:none">
+            <p>1. Add butter, garlic, salt, and pepper to pan</p>
+            <p>2. Saute but do not burn garlic</p>
+            <p>3. Add spinach and heavy whipping cream to pan</p>
+            <p>4. Bring to boil then reduce to simmer</p>
+            <p>5. Make fettuccine pasta al dente</p>
+            <p>6. Saute chopped mushrooms in olive oil</p>
+            <p>7. Add 2 Tbsp. pasta water to cream and spinach mixture</p>
+            <p>8. Toss pasta and sauce together</p>
+            <p>9. Mix in grated parmesan, lemon juice, and mushrooms</p>
+            <p>10. Top with shaved parmesan and enjoy!</p>
+          </div>
+          
           <script src="page6js.js"></script>
     </body>
 </html>
