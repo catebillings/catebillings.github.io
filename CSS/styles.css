@@ -11,7 +11,7 @@
     
     .main {
         display: grid;
-        grid-template-rows: 3fr 1fr;
+        grid-template-rows: 3fr 2fr;
         row-gap: 0;
         list-style-type: none;
         padding: 10px;
@@ -20,7 +20,7 @@
        
     .maintwo {
         display: grid;
-        grid-template-rows: 3fr 1fr 1fr 3fr;
+        grid-template-rows: auto;
         row-gap: 0;
         list-style-type: none;
         padding: 10px;
@@ -32,6 +32,8 @@
         font-size: 15pt;
         list-style-type: none;
     }
+    html {
+      overflow-x: hidden; }
   }
 
 /*Computer Screen */
