@@ -34,6 +34,21 @@
     }
     html {
       overflow-x: hidden; }
+
+    button {
+      font-family: 'Verdana';
+      font-size: 26pt;
+      background-color: #768C7F;
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      top: 2px;
+      left: 2px;
+    }
   }
 
 /*Computer Screen */
