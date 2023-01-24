@@ -360,3 +360,41 @@ input {
   padding: 15px;
   flex: 1;
 }
+
+/* Object Documentation Blog */
+
+.siteheader {
+  font-family: 'Verdana';
+  font-size: 45pt;
+  text-align: center;
+}
+
+.siteh1 {
+  font-family: 'Verdana';
+  font-size: 45pt;
+  text-align: center;
+}
+
+.siteh2 {
+  font-family: 'Verdana';
+  font-size: 34pt;
+  text-align: center;
+}
+
+.siteh3 {
+  font-family: 'Verdana';
+  font-size: 26pt;
+  text-align: center;
+}
+
+.siteh4 {
+  font-family: 'Verdana';
+  font-size: 22pt;
+  text-align: center;
+}
+
+.sitep {
+  font-family: 'Verdana';
+  font-size: 14pt;
+  text-align: center;
+}
