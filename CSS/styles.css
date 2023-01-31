@@ -397,6 +397,7 @@ input {
   font-family: 'Verdana';
   font-size: 14pt;
   text-align: center;
+  padding: 10px;
 }
 
 .subhr {
