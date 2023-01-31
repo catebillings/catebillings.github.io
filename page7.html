@@ -17,8 +17,10 @@
         <h3 class = "siteh3">Description</h3>
         <p class = "sitep">
             Lab 1 introduces electronics and simple circuits. It explores how current flows through components
-            and how to control the path of electricity. In this lab, I built circuits with LEDs to turn them on/off 
-            and to control their brightness.
+            and how to control the path of electricity. In this lab, I began by learning how to properly set up a power 
+            supply using a 9V battery and a Power Supply Module. Then, I learned how to create simple circuits using first a 
+            3.3V power supply then a 5V power supply and different resistors. Finally, I learned how to incorporate a 
+            switch in the form of a button in order to turn the LED on an off using the button. 
         </p>
         <h3 class = "siteh3">Materials Used</h3>
             <ul class = "sitelist">
@@ -58,21 +60,52 @@
                 calculation provided for determining the resistance requried when powering the LED with a 3.3V source.
             </p>
             <p class = "sitep">V = I * R</p>
-            <p class = "sitep">R = V / R</p>
-            <p class = "sitep">R = 3.3V / 30 mA = 110 Ohms</p>
+            <p class = "sitep">R = V / I</p>
+            <p class = "sitep">R = 3.3V / 30 mA = 110 Ohm</p>
             <p class = "sitep">
-                Because there I did not have a 110 Ohm reistor, I set up the circuit using a 100 Ohm resistor. Below is a schematic of the circuit
+                Because I did not have a 110 Ohm reistor, I set up the circuit using a 100 Ohm resistor. Below is a schematic of the circuit
                 and a picture of the physical circuit I created.
             </p>
+            <div class="img-wrap">
+                <a href="#"><img src="./objectpics/3vschematic.JPG" alt="3 volt LED schematic" style="width:300px;height:400px;"></a>
+                <a href="#"><img src="./objectpics/3vLED.JPG" alt="3 volt LED circuit" style="width:300px;height:400px;"></a>
+            </div>
+            <p class = "sitep">
+                I next created a circuit for the LED using the 5V power source. I started by calculating the resistance required using a 5V power sources and 
+                a current of 20 mA. Then I calculate the resistance required using a 5V power sources and a current of 35 mA. I averaged the two resistance values, and 
+                I chose a resistor that was close to that average. Below are my calculations.
+            </p>
+            <p class = "sitep">V = I * R</p>
+            <p class = "sitep">R = V / I</p>
+            <p class = "sitep">R = 5V / 20 mA = 250 Ohm</p>
+            <p class = "sitep">R = 5V / 35 mA = 140 Ohm</p>
+            <p class = "sitep">Average = ((250 Ohm + 140 Ohm) / 2) = 195 Ohm</p>
+            <p class = "sitep">
+                Because I did not have a 195 Ohm reistor, I set up the circuit using a 220 Ohm resistor. Below is a schematic of the circuit
+                and a picture of the physical circuit I created.
+            </p>
+            <div class="img-wrap">
+                <a href="#"><img src="./objectpics/5vschematic.JPG" alt="3 volt LED schematic" style="width:300px;height:400px;"></a>
+                <a href="#"><img src="./objectpics/5vLED.JPG" alt="3 volt LED circuit" style="width:300px;height:400px;"></a>
+            </div>            
         <h3 class = "siteh3">Part 3: Switching the LED</h3>
-            <p class = "sitep"></p>
+            <p class = "sitep">
+                In this part of the lab, I learned how to control the LED by turning it on/off using a switch. The switch I used was a Push Putton, a Single-pole, single-throw
+                (SPST) switch. This means it has one output and one input. It is also a type of momentary switch, which means it is only connected when it is pushed down. I incorporated
+                the push button into the 3.3V source and 100 Ohm resistor circuite as shown below.
+            </p>
+            <video width="300px" height="400px" class = "center" controls>
+                <source src="./objectpics/buttonvideo.mp4" type="video/mp4">
+                <source src="./objectpics/buttonvideo.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
         <h3 class = "siteh3">Problems Faced and Conclusion</h3>
-        <p class = "sitep"></p>
-
-        
-        
-
-        
-        
+        <p class = "sitep">Over the course of the lab, I only encountered a few problems. First, it was difficult to use the multimeter because it was hard to hold the jumper cables
+            to the multimeter. On top of that, taking a photo while already using both my hands proved to be difficult. I was able to solve this problem by having another student take the 
+            photo, and I was able to hold the jumper cables to the grooves after some practice. Another issue I encountered was inserting items into the bread board. The wires on the 
+            resistors tended to bend before being completely inserted into the holes on the breadboard. In the end, it simply took practice to be albe to build the circuits. Overall, 
+            I found this lab fairly easy to complete. The circuits were simple, and I feel that I accopmlished the lab's goal of learning how current flows through components and controlling the path
+            of electricity. I built circuits using a LED, and I learned how to incorporate a switch in the form of a button in order to turn the LED on and off.
+        </p>        
     </body>
 </html>
