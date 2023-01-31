@@ -10,7 +10,69 @@
         </div>
         <h1 class = "siteh1">Object Documentation Blog</h1>
         <hr>
-        <h3 class = "siteh3">
-           This is my blog for object
+        <h3 class = "siteh2">
+            Lab 1 - “All Wired Up and Ready to Go”
         </h3>
         <hr>
+        <h3 class = "siteh3">Description</h3>
+        <p class = "sitep">
+            Lab 1 introduces electronics and simple circuits. It explores how current flows through components
+            and how to control the path of electricity. In this lab, I built circuits with LEDs to turn them on/off 
+            and to control their brightness.
+        </p>
+        <h3 class = "siteh3">Materials Used</h3>
+            <ul class = "sitelist">
+                <li>Power Supply Module</li>
+                <li>Button</li>
+                <li>830 Tie-Points Breadboard</li>
+                <li>Breadboard Jumper Wire</li>
+                <li>9V Battery with Snap-on Connector Clip</li>
+                <li>Resistors</li>
+                <li>LEDs</li>
+                <li>Multimeter</li>
+            </ul>
+        <h3 class = "siteh3">Part 1: Setting Up Power</h3>
+            <p class = "sitep">
+                First, I connected the Power Supply Module, which is capable of converting the 9V batter to both 5V and 
+                3.3V, to the breadboard. I did it such that the '+' and '-' symbols on both sides of the module matched the 
+                '+' (red) and '-' (blue) markings on the breadboard. Then, I connected the 9V battery to the barrel jack Connector
+                on the power module. I pressed the white ON/OFF button on the module to ensure that the power was working. I 
+                knew this because the green LED on the power module turned on when power was being supplied. The correct set up is pictured below.
+            </p>
+            <img src="./objectpics/img1.JPG" alt="working power module" style="width:400px;height:300px;" class="center">
+            <p class = "sitep">    
+                Next, I connected two jumper wires and connected one end of each to a pin on the blue/red power lines on the breadboard.
+                I used the multimeter to probe the two jumper wires to test the voltage on either side to ensure one side was reading around
+                3.3V, and the other side was reading around 5V. My measurments are pictured below. I would like to note that the
+                instructions say to turn the multimeter knob to '20' on the Volts side, but I was instructed in recitation to 
+                turn it to '500' on the Volts side.
+                <img src="./objectpics/3vmulti.JPG" alt="3 volt reading" style="width:400px;height:300px;" class="center">
+                <img src="./objectpics/5vmulti.JPG" alt="5 volt reading" style="width:400px;height:300px;" class="center">
+            </p>
+        <h3 class = "siteh3">Part 2: (Not) Blowing Up An LED</h3>
+            <p class = "sitep">
+                This portion of the lab required calculating the amount of resistance required to properly set up a circuit with a LED.
+                A resistor is required to control the current flowing through the LED, so that it doesn't 'blow up' from too much current.
+                The calculation for the amount of resistance required can be performed using Ohm's Law: V = IR. The LEDs I used for this lab 
+                had a max current rating of 40 mA, so a current of about 20 mA t0 35 mA was appropriate for safely running the LED. Below is the 
+                calculation provided for determining the resistance requried when powering the LED with a 3.3V source.
+            </p>
+            <p class = "sitep">V = I * R</p>
+            <p class = "sitep">R = V / R</p>
+            <p class = "sitep">R = 3.3V / 30 mA = 110 Ohms</p>
+            <p class = "sitep">
+                Because there I did not have a 110 Ohm reistor, I set up the circuit using a 100 Ohm resistor. Below is a schematic of the circuit
+                and a picture of the physical circuit I created.
+            </p>
+        <h3 class = "siteh3">Part 3: Switching the LED</h3>
+            <p class = "sitep"></p>
+        <h3 class = "siteh3">Problems Faced and Conclusion</h3>
+        <p class = "sitep"></p>
+
+        
+        
+
+        
+        
+    </body>
+</html>
