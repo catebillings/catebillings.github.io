@@ -35,13 +35,53 @@
             </ul>
         <h3 class = "siteh3">Part 1: Setting Up the Arduino IDE</h3>
             <p class = "sitep">
-
+                I first set up the Arduino IDE, and I connected my board to my laptop using the USB cable. Below is a
+                picture of the board with the green light on, which indicates it is powered on.
             </p>
+            <img src="./objectpics/lab2/boardon.PNG" alt="working power module" style="width:400px;height:300px;" class="center">
+            <p class = "sitep">
+                Next, I used the Arduino "blink" sample code to get the orange LED on the board to blink repeatedly. A 
+                video is shown below. 
+            </p>
+            <video width="300px" height="400px" rotate = "90" class = "center" controls>
+                <source src="./objectpics/lab2/arduinoBlinking.mp4" type="video/mp4">
+                <source src="./objectpics/lab2/arduinoBlinking.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
         <h3 class = "siteh3">Part 2: Blinking an External LED</h3>
             <p class = "sitep">
-                This portion of the lab consisted of using an 
+                This portion of the lab consisted of using Digital Output to blink an external LED. The term Digital implies binary.
+                It can be 1 or 0, or HIGH or LOW, which are called levels. In terms of electricity, however, HIGH means a certain voltage
+                (could be 3.3V or 5V or more), while LOW means 0V. In the Arduino, we can program the digital pins to be HIGH/LOW,
+                which will turn that pin to 5V (HIGH), or 0V (LOW). In order to get the LED connected to the Arduino to blink, I modified 
+                the "blink" sample code from earlier in the lab. In order to get the LED to blink on pin 10, I first declared a global 
+                variable equal to 10 outside both functions. Then, I replaced "LED_BUILTIN" with "LED_PIN," whcih is the name of the variable.
+                My code and a video of the LED blinking are pictured below. 
             </p>
+            <img src="./objectpics/lab2/blinkCodeForLED.JPG" alt="3 volt reading" style="width:800px;height:300px;" class="center">
+            <p></p>
+            <video width="300px" height="400px" class = "center" controls>
+                <source src="./objectpics/lab2/LEDBlinkingSlow.mp4" type="video/mp4">
+                <source src="./objectpics/lab2/LEDBlinkingSlow.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+            <p class = "sitep">
+                Next, I wanted to change the blinking period for the LED. I decreased the delay to 100 ms, so the LED blinked much faster. 
+                The new code and video of the LED blinking faster are pcitured below. 
+            </p>
+            <img src="./objectpics/lab2/LEDBlinkingFastCode.JPG" alt="3 volt reading" style="width:800px;height:300px;" class="center">
+            <p></p>
+            <video width="300px" height="400px" class = "center" controls>
+                <source src="./objectpics/lab2/LEDBlinkingFast.mp4" type="video/mp4">
+                <source src="./objectpics/lab2/LEDBlinkingFast.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+        <h3 class = "siteh3">Part 3: Button Press and Serial Monitor</h3>
+        
+
+
         <!-- Lab 1 --> 
+        <hr>
         <h2 class = "siteh2">
             Lab 1 - “All Wired Up and Ready to Go”
         </h2>
@@ -73,13 +113,13 @@
                 on the power module. I pressed the white on/off button on the module to ensure that the power was working. I 
                 knew this because the green LED on the power module turned on when power was being supplied. The correct set up is pictured below.
             </p>
-            <img src="./objectpics/img1.JPG" alt="working power module" style="width:400px;height:300px;" class="center">
+            <img src="./objectpics/lab1/img1.JPG" alt="working power module" style="width:400px;height:300px;" class="center">
             <p class = "sitep">    
                 Next, I connected two jumper wires and connected one end of each to a pin on the blue/red power lines on the breadboard.
                 I used the multimeter to probe the two jumper wires to test the voltage on either side to ensure one side was reading around
                 3.3V, and the other side was reading around 5V. My measurments are pictured below.
-                <img src="./objectpics/3vmulti.JPG" alt="3 volt reading" style="width:400px;height:300px;" class="center">
-                <img src="./objectpics/5vmulti.JPG" alt="5 volt reading" style="width:400px;height:300px;" class="center">
+                <img src="./objectpics/lab1/3vmulti.JPG" alt="3 volt reading" style="width:400px;height:300px;" class="center">
+                <img src="./objectpics/lab1/5vmulti.JPG" alt="5 volt reading" style="width:400px;height:300px;" class="center">
             </p>
         <h3 class = "siteh3">Part 2: (Not) Blowing Up An LED</h3>
             <p class = "sitep">
@@ -97,8 +137,8 @@
                 and a picture of the physical circuit I created.
             </p>
             <div class="img-wrap">
-                <a href="#"><img src="./objectpics/3vschematic.JPG" alt="3 volt LED schematic" style="width:300px;height:400px;"></a>
-                <a href="#"><img src="./objectpics/3vLED.JPG" alt="3 volt LED circuit" style="width:300px;height:400px;"></a>
+                <a href="#"><img src="./objectpics/lab1/3vschematic.JPG" alt="3 volt LED schematic" style="width:300px;height:400px;"></a>
+                <a href="#"><img src="./objectpics/lab1/3vLED.JPG" alt="3 volt LED circuit" style="width:300px;height:400px;"></a>
             </div>
             <p class = "sitep">
                 I next created a circuit for the LED using the 5V power source. I started by calculating the resistance required using a 5V power sources and 
@@ -115,8 +155,8 @@
                 and a picture of the physical circuit I created.
             </p>
             <div class="img-wrap">
-                <a href="#"><img src="./objectpics/5vschematic.JPG" alt="3 volt LED schematic" style="width:300px;height:400px;"></a>
-                <a href="#"><img src="./objectpics/5vLED.JPG" alt="3 volt LED circuit" style="width:300px;height:400px;"></a>
+                <a href="#"><img src="./objectpics/lab1/5vschematic.JPG" alt="3 volt LED schematic" style="width:300px;height:400px;"></a>
+                <a href="#"><img src="./objectpics/lab1/5vLED.JPG" alt="3 volt LED circuit" style="width:300px;height:400px;"></a>
             </div>            
         <h3 class = "siteh3">Part 3: Switching the LED</h3>
             <p class = "sitep">
@@ -125,8 +165,8 @@
                 the push button into the 3.3V source and 100 Ohm resistor circuit as shown below.
             </p>
             <video width="300px" height="400px" class = "center" controls>
-                <source src="./objectpics/buttonvideo.mp4" type="video/mp4">
-                <source src="./objectpics/buttonvideo.ogg" type="video/ogg">
+                <source src="./objectpics/lab1/buttonvideo.mp4" type="video/mp4">
+                <source src="./objectpics/lab1/buttonvideo.ogg" type="video/ogg">
               Your browser does not support the video tag.
             </video>
         <h3 class = "siteh3">Problems Faced and Conclusion</h3>
