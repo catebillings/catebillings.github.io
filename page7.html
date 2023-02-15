@@ -67,7 +67,7 @@
             </video>
             <p class = "sitep">
                 Next, I wanted to change the blinking period for the LED. I decreased the delay to 100 ms, so the LED blinked much faster. 
-                The new code and video of the LED blinking faster are pcitured below. 
+                The new code and video of the LED blinking faster are pictured below. 
             </p>
             <img src="./objectpics/lab2/LEDBlinkingFastCode.JPG" alt="3 volt reading" style="width:800px;height:300px;" class="center">
             <p></p>
@@ -77,7 +77,50 @@
               Your browser does not support the video tag.
             </video>
         <h3 class = "siteh3">Part 3: Button Press and Serial Monitor</h3>
-        
+            <p class = "sitep">
+                I started this part of the lab by adding a digital input button switch to the circuit. The new circuit is pictured in the 
+                image below. 
+            </p>
+            <img src="./objectpics/lab2/buttonCircuit.JPG" alt="3 volt reading" style="width:400px;height:300px;" class="center">
+            <p class = "sitep">
+                Furthermore, I learned hw to use the Serial Monitor. First I created code that simply prints a statement repeatedly. The code and 
+                an image of it working are pictured below.
+            </p>
+            <img src="./objectpics/lab2/serialMonitor.JPG" alt="3 volt reading" style="width:800px;height:300px;" class="center">
+            <p></p>
+            <img src="./objectpics/lab2/serialMonitorWorking.JPG" alt="3 volt reading" style="width:400px;height:300px;" class="center">
+            <p class = "sitep">
+                After this, I used the Serial Monitor to print a waiting message while waiting for the button to be pressed and a success message
+                once the button is pressed. Below is the code I used and a video of it working.
+            </p>
+            <img src="./objectpics/lab2/serialMonitorandButtonCode.JPG" alt="3 volt reading" style="width:800px;height:450px;" class="center">
+            <p></p>
+            <video width="300px" height="400px" class = "center" controls>
+                <source src="./objectpics/lab2/buttonAndSerialMonitor.mp4" type="video/mp4">
+                <source src="./objectpics/lab2/buttonAndSerialMonitor.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+            <p>The button state oscillates a few fimtes even when I just press the button once. I think this is caused by the if statement repeating itself
+                before the button is pressed. I think implementing while loops could help to resolve this issue.
+            </p>
+        <h3 class = "siteh3">Part 4: LED Reaction Game</h3>
+            <p class = "sitep">
+                This is my code for the LED Reaction Game. To explain the program flow, the game overall starts with a welcome and ready statement that only prints once 
+                becasue it is in the setup() function. Once the program moves on the loop function, it uses digitalRead to check if the input pin is HIGH or LOW. While it is 
+                LOW, it calculates a random number between .5 seconds and 5 seconds, then inputs that number into the delay. Once the delay is done, the program caluclates 
+                the time it has been since the program started, and it turns on the LED using digitalWrite. Once the user pushes the button, the program moves to the 
+                second while loop. Here, it turns the LED off using digitalWrite. Then, it calculates the time it took to press the button using the "startTime" measurement 
+                from the first while loop. Finally, it prints the reaction time and implements a 5 second delay for the player to get ready.    
+            </p>
+            <script src="https://gist.github.com/catebillings/efa43da20a1dd7e662c16786853cb5c2.js"></script>
+            <p class = "sitep">
+                This is a video of my game working.
+            </p>
+            <video width="300px" height="400px" class = "center" controls>
+                <source src="./objectpics/lab2/LEDGameFinal.mp4" type="video/mp4">
+                <source src="./objectpics/lab2/LEDGameFinal.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
 
 
         <!-- Lab 1 --> 
