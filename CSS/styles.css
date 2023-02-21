@@ -389,7 +389,7 @@ input {
 
 .siteh4 {
   font-family: 'Verdana';
-  font-size: 22pt;
+  font-size: 20pt;
   text-align: center;
 }
 
@@ -409,6 +409,12 @@ input {
   font-size: 14pt;
   text-align: center;
   list-style-type: none;
+}
+
+.sitelistordered {
+  font-family: 'Verdana';
+  font-size: 14pt;
+  text-align: left;
 }
 
 .center {
