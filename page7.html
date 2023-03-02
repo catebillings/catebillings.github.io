@@ -10,12 +10,159 @@
         </div>
         <h1 class = "siteh1">Object Documentation Blog</h1>
         <hr>
+        
+
+        <!-- Lab 4 --> 
+        <h2 class = "siteh2">
+            Lab 4 - "Whack-A-MoLED”
+        </h2>
+        <hr>
+        <h3 class = "siteh3">Description</h3>
+        <p class = "sitep">
+            Lab 4 introduces...
+        </p>
+        <h3 class = "siteh3">Materials Used</h3>
+        <ul class = "sitelist">
+            <li>Arduino (Elegoo) Uno R3 Controller Board</li>
+            <li>USB Cable</li>
+            <li>USB Adapter (if you have a USB-C-only laptop)</li>
+            <li>Breadboard Jumper Wire</li>
+            <li>Resistors</li>
+            <li>LEDs</li>
+            <li>Potentiometer 10k</li>
+            <li>Joystick Module</li>
+            <li>Multimeter</li>
+        </ul>
+    <h3 class = "siteh3">Part 1: Using a Potentiometer</h3>
+        <p class = "sitep">
+            I first connected the potentiometer to the Arduino as pictured below.
+        </p>
+        <img src="./objectpics/lab4/part1Circuit.JPG" style="width:300px;height:400px;" class="center">
+        <p class = "sitep">
+            Next, I used the analogRead() function to create an Arduino sketch that continuously prints the analog value of the potentiometer 
+            on the serial monitor. The sketch and video demonstrating the change in the printed value as I rotate the potentiomter are pictured below.
+        </p>
+
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab4/part1.mp4" type="video/mp4">
+            <source src="./objectpics/lab4/part1.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+        <script src="https://gist.github.com/catebillings/7c0f650e390a2c5b44c81b7bee7e98e8.js"></script>
+
+        <h3 class = "siteh3">Part 2: Light 'Em Up With a Potentiometer</h3>
+        <p class = "sitep">
+            Below is a picture of the complete circuit I used for this portion of the lab.
+        </p>
+        <img src="./objectpics/lab4/part2Circuit.JPG" style="width:300px;height:400px;" class="center">
+        <p class = "sitep">
+            I used the map function to create a script that turns on more LEDs as the potentiometer is turned. The range of y in the map function is the 
+            amount of LEDs on the board. The map value of y produced is how I turned on a different number of LEDs as shown in the Arduino sketch below. 
+            I also included a video of the circuit working below the code.
+        </p>
+        <script src="https://gist.github.com/catebillings/e4ef0c1d7d3334b7a8677ed9a7f4dd22.js"></script>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab4/part2.mp4" type="video/mp4">
+            <source src="./objectpics/lab4/part2.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+
+        <h3 class = "siteh3">Part 3: Joystick for Arduino</h3>
+        <p class = "sitep">
+            I connected the Arduino to the Arduino as shown in the circuit below.
+        </p>
+        <img src="./objectpics/lab4/part3Circuit.JPG" style="width:300px;height:400px;" class="center">
+        <p class = "sitep">
+            The code I used to determine the average values of X and Y for each position of the joystick is shown below.
+        </p>
+        <script src="https://gist.github.com/catebillings/661a23960cc6cefddae705ff71ddc216.js"></script>
+        <p class = "sitep">
+            The average values of X and Y for each position of the joystick are represented in the table belwo.
+        </p>
+        <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+            <thead>
+              <tr>
+                <th></th>
+                <th>X</th>
+                <th>Y</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Centered</td>
+                <td>517</td>
+                <td>526</td>
+              </tr>
+              <tr>
+                <td>Left</td>
+                <td>0</td>
+                <td>526</td>
+              </tr>
+              <tr>
+                <td>Right</td>
+                <td>1023</td>
+                <td>526</td>
+              </tr>
+              <tr>
+                <td>Up</td>
+                <td>517</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Down</td>
+                <td>517</td>
+                <td>1023</td>
+              </tr>
+              <tr>
+                <td>Top Left</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Top Right</td>
+                <td>1023</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Bottom Left</td>
+                <td>105</td>
+                <td>1023</td>
+              </tr>
+              <tr>
+                <td>Bottom Right</td>
+                <td>1023</td>
+                <td>1023</td>
+              </tr>
+            </tbody>
+            </table>
+
+        <h3 class = "siteh3">Part 4: Light 'Em Up with a Joystick</h3>
+        <p class = "sitep">
+            Below is the simple circuit I created for this portion of the lab.
+        </p>
+        <img src="./objectpics/lab4/part4Circuit.JPG" style="width:300px;height:400px;" class="center">
+        <p class = "sitep">
+            Below is the Arduino sketch I created and two videos of generated differernt LED sequences using 
+            the joystick.
+        </p>
+        <script src="https://gist.github.com/catebillings/7a680dd0085821c8793ef532471de93a.js"></script>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab4/part4vid1.mp4" type="video/mp4">
+            <source src="./objectpics/lab4/part4vid1.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab4/part4vid2.mp4" type="video/mp4">
+            <source src="./objectpics/lab4/part4vid2.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Lab 3 --> 
+        <hr>
         <h2 class = "siteh2">
             Lab 3 - “I came, I saw, I soldered”
         </h2>
         <hr>
-
-        <!-- Lab 3 --> 
         <h3 class = "siteh3">Description</h3>
         <p class = "sitep">
             Lab 3 introduces the basics of soldering. Soldering is a technique to connect two pieces of metal together 
@@ -109,6 +256,17 @@
                 The final 8-inch wire is pictured here.
             </p>
             <img src="./objectpics/lab3/finalwirestogether.JPG" style="width:300px;height:400px;" class="center">
+            <video width="300px" height="400px" rotate = "90" class = "center" controls>
+                <source src="./objectpics/lab2/arduinoBlinking.mp4" type="video/mp4">
+                <source src="./objectpics/lab2/arduinoBlinking.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+            <video width="300px" height="400px" rotate = "90" class = "center" controls>
+                <source src="./objectpics/lab2/arduinoBlinking.mp4" type="video/mp4">
+                <source src="./objectpics/lab2/arduinoBlinking.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+            
 
 
         <!-- Lab 2 --> 
