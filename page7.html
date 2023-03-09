@@ -10,9 +10,175 @@
         </div>
         <h1 class = "siteh1">Object Documentation Blog</h1>
         <hr>
-        
+
+        <!-- Lab 5 --> 
+        <h2 class = "siteh2">
+            Lab 5 - "Revenge of the Synth”
+        </h2>
+        <hr>
+        <h3 class = "siteh3">Description</h3>
+        <p class = "sitep">
+            Lab 5 introduces ways the Arduino can interact with the world using analog outputs. In this lab I created some complex outputs from the Arduino 
+            in two contexts - visual and sound. In the first two parts of the lab, I lit up an RGB LED in different colors, and I learned how to use a joystick 
+            to change the color of the RGB LED. Then, in the latter two parts of the lab, 
+            I created interesting sounds using a piezo buzzer.
+        </p>
+        <h3 class = "siteh3">Materials Used</h3>
+        <ul class = "sitelist">
+            <li>Arduino (Elegoo) Uno R3 Controller Board</li>
+            <li>USB Cable</li>
+            <li>USB Adapter (if you have a USB-C-only laptop)</li>
+            <li>Breadboard Jumper Wire</li>
+            <li>Resistors</li>
+            <li>RGB LED</li>
+            <li>Joystick Module</li>
+            <li>Passive Buzzer</li>
+            <li>Multimeter</li>
+        </ul>
+    <h3 class = "siteh3">Part 1: Wiring up the RGB LED</h3>
+        <p class = "sitep">
+            I first built a circuit using 220 Ohm resistors for the RGB LED and Arduino. Below is a Fritzing circuit schematic and an image of the 
+            physical circuit.
+        </p>
+        <img src="./objectpics/lab5/Lab5_schem.jpg" style="width:400px;height:300px;" class="center">
+        <img src="./objectpics/lab5/Part1Circuit.JPG" style="width:400px;height:300px;" class="center">
+        <p class = "sitep">
+            Next, I used the following code to control the brightness of the R, G, and B LEDs inside the RGB LED to produce different colors. Four different colors 
+            on the LED are pictured below the sketch.
+        </p>
+        <script src="https://gist.github.com/catebillings/80c01813d765d557012af7cc2381ccf9.js"></script>
+        <img src="./objectpics/lab5/Part1Color1.JPG" style="width:400px;height:300px;" class="center">
+        <img src="./objectpics/lab5/Part1Color2.JPG" style="width:400px;height:300px;" class="center">
+        <img src="./objectpics/lab5/Part1Color3.JPG" style="width:400px;height:300px;" class="center">
+        <img src="./objectpics/lab5/Part1Color4.JPG" style="width:400px;height:300px;" class="center">
+
+        <h3 class = "siteh3">Part 2: Dynamic Color Changer with Joystick</h3>
+        <p class = "sitep">
+            Next, I used the following code in order to change the color of the LED by moving a joystick. A video of the LED changing with the joystick is 
+            shown below the code.
+        </p>
+        <script src="https://gist.github.com/catebillings/a725efd891e5fd111097d43311ebe6da.js"></script>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab5/Part2Joystick.mp4" type="video/mp4">
+            <source src="./objectpics/lab5/Part2Joystick.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+
+        <h3 class = "siteh3">Part 3: Musical Notes with Passive Buzzer</h3>
+        <p class = "sitep">
+            For this portion of the lab, I started by creating a simple circuit to connect the passive buzzer to the Arduino. It is pictured below.
+        </p>
+        <img src="./objectpics/lab5/Part3BuzzerCircuit.JPG" style="width:400px;height:300px;" class="center">
+        <p class = "sitep">
+            Next, I created a simple Arduino sketch that plays a beep frequency of 440 Hz on the buzzer for 1 second, stops for 1 second, and then plays the beep 
+            again - doing this repeatedly in the loop() function of the Arduino. The Arduino sketch and video of the buzzer beeping are shown below.
+        </p>
+        <script src="https://gist.github.com/catebillings/c99a9e6f44c095c9cfad44117c695e82.js"></script>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab5/Part3FirstBeep.mp4" type="video/mp4">
+            <source src="./objectpics/lab5/Part3FirstBeep.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+        <p class = "sitep">
+            Next, I added the "pitches.h" header file to the correct folder as shown below.
+        </p>
+        <img src="./objectpics/lab5/pitches.JPG" style="width:400px;height:300px;" class="center">
+        <p class = "sitep">
+            Finally for this portion of the lab, I modified the Arduino sketch to play a beep of the C3 note using 
+            the notes from "pitches.h." The code and video of it working are shown below.
+        </p>
+        <script src="https://gist.github.com/catebillings/1bb8efdf5fcbdfca36d257f887e10674.js"></script>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab5/Part3SecondBeep.mp4" type="video/mp4">
+            <source src="./objectpics/lab5/Part3SecondBeep.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+
+        <h3 class = "siteh3">Part 4: Melody from the Buzzer</h3>
+        <p class = "sitep">
+            For this portion of the lab, I started by writing an Arduino sketch that plays the melody given in the lab instructions.
+            My Arduino sketch and video of the melody playing on the buzzer are shown below.
+        </p>
+        <script src="https://gist.github.com/catebillings/4c64b43ca3bafc4156a92acb3c545318.js"></script>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab5/Part4Melody1.mp4" type="video/mp4">
+            <source src="./objectpics/lab5/Part4Melody1.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+        <p class = "sitep">
+            Finally, I created my own melody. The Arduino sketch I wrote, a table of the note sequence, and a video of the melody playing are 
+            all shown below.
+        </p>
+        <script src="https://gist.github.com/catebillings/6e7ce3318a31dc97d7a29917f39deb39.js"></script>
+        <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+            <thead>
+              <tr>
+                <th>Note</th>
+                <th>Duration</th>
+                <th>Dotted</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A5</td>
+                <td>1/2</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>A5</td>
+                <td>1/2</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>G5</td>
+                <td>1/8</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>E6</td>
+                <td>1/8</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>A5</td>
+                <td>1/16</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>A5</td>
+                <td>1/16</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>G5</td>
+                <td>1</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>E6</td>
+                <td>1/4</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>G5</td>
+                <td>1/4</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>A5</td>
+                <td>1/4</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+            </table>
+            <video width="300px" height="400px" rotate = "90" class = "center" controls>
+                <source src="./objectpics/lab5/Part4Melody2.mp4" type="video/mp4">
+                <source src="./objectpics/lab5/Part4Melody2.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
 
         <!-- Lab 4 --> 
+        <hr>
         <h2 class = "siteh2">
             Lab 4 - "Whack-A-MoLED”
         </h2>
