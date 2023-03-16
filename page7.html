@@ -11,7 +11,136 @@
         <h1 class = "siteh1">Object Documentation Blog</h1>
         <hr>
 
+        <!-- Lab 6 --> 
+        <h2 class = "siteh2">
+            Lab 6 - "Just a Motor of Time”
+        </h2>
+        <hr>
+        <h3 class = "siteh3">Description</h3>
+        <p class = "sitep">
+            Lab 6 introduces...
+        </p>
+        <h3 class = "siteh3">Materials Used</h3>
+        <ul class = "sitelist">
+            <li>Arduino (Elegoo) Uno R3 Controller Board</li>
+            <li>USB Cable</li>
+            <li>USB Adapter (if you have a USB-C-only laptop)</li>
+            <li>Breadboard Jumper Wire</li>
+            <li>Resistors</li>
+            <li>Power Supply Module</li>
+            <li>Servo Motor SG90</li>
+            <li>DC Motor and Fan Blade</li>
+            <li>L293D IC</li>
+            <li>Button</li>
+            <li>Potentiometer</li>
+            <li>9V Battery with Snap-on Connector</li>
+            <li>Multimeter</li>
+        </ul>
+    <h3 class = "siteh3">Part 0: Setting Up Power</h3>
+        <p class = "sitep">
+            For this portion of the lab, I connected the power supply ,odule to the breadboard 
+            such that one of the power railes provides the voltage of 5V, and the other provides that of 3.3V. 
+            A picture of the power suppy board connected to the breadboard is pictured below.
+        </p>
+        <img src="./objectpics/lab6/part0.JPG" style="width:400px;height:300px;" class="center">
+    
+        <h3 class = "siteh3">Part 1: Wiring the Servo</h3>
+        <p class = "sitep">
+            For this part of the lab, I connected the servo to the appropriate pins on the Arduino. The pins that allow PWM are designated by a "~." An 
+            image of the servo connected is shown below.
+        </p>
+        <img src="./objectpics/lab6/Part1ServoCircuit.JPG" style="width:400px;height:300px;" class="center">
+        <p class = "sitep">
+            I also ensured that the "Servo.h" libarary was installed on my computer. A screenshot showing that it is installed is shown below.
+        </p>
+        <img src="./objectpics/lab6/Part1LibraryInstalled.JPG" style="width:400px;height:300px;" class="center">
+        <p class = "sitep">
+            Next, I used the following code to move the Servo as shown in the following video.
+        </p>
+        <script src="https://gist.github.com/catebillings/cef02138c4c923d8b5607c2aa975a236.js"></script>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab6/part1servo.mp4" type="video/mp4">
+            <source src="./objectpics/lab6/part1servo.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+
+        <h3 class = "siteh3">Part 2: Controlling the Servo</h3>
+        <p class = "sitep">
+            I next connected a potentiometer to the servo as shown in the circuit below.
+        </p>
+        <img src="./objectpics/lab6/part0.JPG" style="width:400px;height:300px;" class="center">
+        <p class = "sitep">
+            I used the map() Arduino function to convert the analog potentiometer reading into an angle value that can be sent 
+            to the servo to make it move in sync with the potentionmeter. The code for this and a video of it working are shown below.
+        </p>
+        <script src="https://gist.github.com/catebillings/282a0df79d78cb3e3a2e56005ae5cd03.js"></script>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab6/part2servopot.mp4" type="video/mp4">
+            <source src="./objectpics/lab6/part2servopot.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+
+
+        <h3 class = "siteh3">Part 3: DC Motor and Motor Driver</h3>
+        <p class = "sitep">
+            Below is a picture of my motor circuit and a video of the motor running.
+        </p>
+        <img src="./objectpics/lab6/part3motorcircuit.JPG" style="width:400px;height:300px;" class="center">
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab6/part3motorworking.mp4" type="video/mp4">
+            <source src="./objectpics/lab6/part3motorworking.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+        <p class = "sitep">
+            I then build a circuit that integrates the L293D chip to the Arduino and motor as shown below.
+        </p>
+        <img src="./objectpics/lab6/part3complexcircuit.JPG" style="width:400px;height:300px;" class="center">
+        <p class = "sitep">
+            Next, I used the following code to make the motor spin forward at full sped for 2 seconds, stop for 1 second, turn 
+            backwards at full speed for 2 seconds, then stop for 1 second again and repeat. A video of this code working is also shown below 
+            the code.
+        </p>
+        <script src="https://gist.github.com/catebillings/0589bd1d3d531b792f9a992c66e2e823.js"></script>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab6/part3startstop.mp4" type="video/mp4">
+            <source src="./objectpics/lab6/part3startstop.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+        <p class = "sitep">
+            Finally, for this part of the lab, I wrote the following code that starts the motor from 0 speed (stopped) and ramps it up slowly 
+            to full speed. The interval between each step in the ramping up can be anywhere between 5ms to 20ms. It also starts the motor at full 
+            speed and slowly ramps it down to a stop. The interval between each step in the ramping down can be anywhere between 5ms to 20ms. A video 
+            of this code working is also pictured below the code. 
+        </p>
+        <script src="https://gist.github.com/catebillings/e159b89996e025e749c60dc96ea5b717.js"></script>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab6/part3rampuprampdown.mp4" type="video/mp4">
+            <source src="./objectpics/lab6/part3rampuprampdown.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+
+        <h3 class = "siteh3">Part 4: Table-Top Fan</h3>
+        <p class = "sitep">
+            In order to create the table-top fan, I attached the motor to the servo as pictured below.
+        </p>
+        <img src="./objectpics/lab6/part4attachment.JPG" style="width:400px;height:300px;" class="center">
+        <p class = "sitep">
+            Next I build the follwing circuit.
+        </p>
+        <img src="./objectpics/lab6/part4circuit.JPG" style="width:800px;height:600px;" class="center">
+        <p class = "sitep">
+            Finally, I wrote the following code that causes the servo to rotate while the motor is spinning the fan. The appropriate PWM value for the motor 
+            to spin continuously at 70% speed is 179. A video of the fan working is pictured below the code.
+        </p>
+        <script src="https://gist.github.com/catebillings/5088dea26d2e410e9c8ffbacb95206cb.js"></script>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab6/part4fan.mp4" type="video/mp4">
+            <source src="./objectpics/lab6/part4fan.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+
         <!-- Lab 5 --> 
+        <hr>
         <h2 class = "siteh2">
             Lab 5 - "Revenge of the Synth”
         </h2>
