@@ -11,7 +11,104 @@
         <h1 class = "siteh1">Object Documentation Blog</h1>
         <hr>
 
+        <!-- Lab 7 --> 
+        <h2 class = "siteh2">
+            Lab 7 - "Trust the Process-ing”
+        </h2>
+        <hr>
+        <h3 class = "siteh3">Description</h3>
+        <p class = "sitep">
+            Lab 7 introduces how to create interactive animations and visualizations using Processing. Also, it shows how to connect those visualizations to 
+            the Arduino and control them using electronics. I learned about Processing and how to use it, and how to set up serial communication between Processing and 
+            the Arduino. I was able to explore the depths of Processing and create my own creative, interactive visual.
+        </p>
+        <h3 class = "siteh3">Materials Used</h3>
+        <ul class = "sitelist">
+            <li>Arduino (Elegoo) Uno R3 Controller Board</li>
+            <li>USB Cable</li>
+            <li>USB Adapter (if you have a USB-C-only laptop)</li>
+            <li>Breadboard Jumper Wire</li>
+            <li>Joystick</li>
+            <li>Multimeter</li>            
+        </ul>
+        <h3 class = "siteh3">Part 0: Setting Up Processing</h3>
+        <p class = "sitep">
+            This part of the lab was simple. I downloaded processing on my computer, and I opened a new sketch. Below is a screenshot of this 
+            sketch to show that processing was properly downloaded.
+        </p>
+        <img src="./objectpics/lab7/part0.JPG" style="width:600px;height:450px;" class="center">
+        <h3 class = "siteh3">Part 1: Creating with Processing</h3>
+        <p class = "sitep">
+            For this part of the lab, first I used the following sample code that creates a window and then starts drawing white circles at the position of the mouse. 
+            An video of this working is shown below.
+        </p>
+        <script src="https://gist.github.com/catebillings/ffe58545253c50986a0b1c900f45e314.js"></script>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab7/bigCircle.mp4" type="video/mp4">
+            <source src="./objectpics/lab7/bigCircle.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+        <p class = "sitep">
+            Next, I experimented with changing the color and size of the ellipse drawn. The modified code and a video of 
+            the updated animation is shown below.
+        </p>
+        <script src="https://gist.github.com/catebillings/5bd25d94995371fcf74b1bbe81e52f30.js"></script>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab7/smallCircle.mp4" type="video/mp4">
+            <source src="./objectpics/lab7/smallCircle.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+        <h3 class = "siteh3">Part 2: Processing with Arduino</h3>
+        <p class = "sitep">
+            For part 2, I first connected the joystick to the Arduino. A Fritzing circuit illustration and image of the physical circuit are pictured below.
+        </p>
+        <img src="./objectpics/lab7/JoystickSetup_bb.png" style="width:600px;height:450px;" class="center">
+        <img src="./objectpics/lab7/connectedJoystick.JPG" style="width:450px;height:600px;" class="center">
+        <p class = "sitep">
+            Next, I wrote an Arduino sketch to produce a serial output that shows the x-value, y-value, and sw-value of the joystick. The sketch I wrote and 
+            a video of it working are pictured below.
+        </p> 
+        <script src="https://gist.github.com/catebillings/c1203c0ea6d6d2e0e190d1e8993c2810.js"></script>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab7/workingSerial.mp4" type="video/mp4">
+            <source src="./objectpics/lab7/workingSerial.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>     
+        <p class = "sitep">
+            I then integrated processing in order to create code that allows for the ellipse from part 1 to move with the joystick. My Processing sketch and a video of it 
+            working are pictured below.
+        </p>
+        <script src="https://gist.github.com/catebillings/a70e01b342f4ff39de1fa8cb34406875.js"></script>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab7/part2Final.mp4" type="video/mp4">
+            <source src="./objectpics/lab7/part2Final.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+
+
+        <h3 class = "siteh3">Part 3: Creating Your Own Visualization</h3>
+        <p class = "sitep">
+            For part 3 I decided to create a visual where the user can change the backround color by pressing different buttons or turning a potentionmeter. One button turns 
+            the background blue and the other button turns the background red. Finally, when the potentiometer is turned all the way up, the background turns green. 
+            First, I built the circuit. A picture of the physical circuit is shown below.
+        </p>
+        <img src="./objectpics/lab7/part3Circuit.JPG" style="width:450px;height:600px;" class="center">
+        <p class = "sitep">
+            Next, I wrote the code. My Arduino sketch and Processing sketch are pictured below.
+        </p>
+        <script src="https://gist.github.com/catebillings/5a19f0d8f75dc6854f08a5c960734660.js"></script>
+        <script src="https://gist.github.com/catebillings/ecc9995fe5c9f3052e49c438148eed55.js"></script>
+        <p class = "sitep">
+            Finally, a video of the working circuit and code is displayed below.
+        </p>
+        <video width="300px" height="400px" rotate = "90" class = "center" controls>
+            <source src="./objectpics/lab7/part3video.mp4" type="video/mp4">
+            <source src="./objectpics/lab7/part3video.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+
         <!-- Lab 6 --> 
+        <hr>
         <h2 class = "siteh2">
             Lab 6 - "Just a Motor of Time”
         </h2>
